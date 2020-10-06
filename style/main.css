@@ -65,7 +65,7 @@ body{
 	font-family: 'Josefin Sans', sans-serif;
 }
 
-h1, h2, h3{
+h1, h2{
 	letter-spacing: 2px;
 	font-weight: 700;
 }
@@ -93,14 +93,14 @@ header{
 
 #home .name{
 	display: flex;
-	width: 20%;
+	width: 30%;
 	font-weight: 700;
 }
 
 #home .name a{
 	display: flex;
-	font-size: 2rem;
-	color:#550000;
+	font-size: 3rem;
+	color:#59BED2;
 	text-decoration: none;
 	justify-content: center;
 	margin-left: 10%;
@@ -123,13 +123,54 @@ header{
 #about{
 	display: flex;
 	padding: 10% 0;
-	background-image: url(/images/palm-trees.jpeg);
+	background-image: url(/images/palm-trees-blue.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	
+	background-position: top right;
+	width:100%;
+	justify-content: center;
+	align-items: center;
+	height: 85vh;
 }
 
-.main{
+.profile-pic img{
+	display: flex;
+	border-radius: 10%;
+	border: white .5rem solid;
+	margin-left: 10%;
+	box-shadow: 0 10px 10px -10px #555;
+	max-height: 60vh;
+}
+
+.intro{
+	display: flex;
+	flex-flow: column nowrap;
+	color: white;
+	margin: 10%;
+	width: 75%;
+}
+
+.intro h2{
+	font-size: 5rem;
+	text-shadow:1px 1px 2px #000000;
+}
+
+.intro h3{
+	font-size: 3rem;
+	text-shadow:1px 1px 2px #000000;
+	padding-bottom: 5%;
+}
+
+.intro p{
+	text-shadow:1px 1px 2px #000000;
+}
+
+
+
+
+
+
+/* .main{
 	width: 90%;
 	margin: 0 auto;
 }
@@ -245,4 +286,4 @@ transform: 3s;
 .icon:hover{
 	width: 60px;
 	transform: rotate(10deg);
-} */
+}  */
