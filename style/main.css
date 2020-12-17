@@ -1,0 +1,352 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start of Katie's Code */
+
+*{
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	font-size: 1.8rem;
+	color: #4f4f4f;
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: 1.5;
+}
+
+h1, h2{
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+
+a{
+	text-decoration: none;
+	color: #4f4f4f;
+	font-size: 1.4rem;
+}
+
+section{
+	padding: 4%;
+}
+
+nav {
+	display: flex;
+	justify-content: flex-start;
+	flex-flow: row nowrap;
+	text-align: center;
+	background-color: white;
+	width: 100%;
+	position: fixed;
+	opacity: 85%;
+	/* border: 1px solid blue; */
+	align-items: center;
+	padding-top: .5rem;
+}
+
+nav .name{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	font-weight: 700;
+	font-size: 5vh;
+	color:#4094A9;
+	margin-left: 2rem;
+	/* border: 1px solid green; */
+}
+nav .name a{
+	font-weight: 700;
+	font-size: 5vh;
+	color:#4094A9;
+}
+#home a:hover{
+	color: #EA5C6C;
+}
+
+nav .links{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: fixed; 
+	width: 100%;
+	/* border: 1px solid red; */
+}
+.links a{
+	font-weight: 600;
+	margin-right: 4rem;
+}
+
+#about{
+	display: flex;
+	padding: 10% 0;
+	background-image: url(/images/palm-trees-blue\ 2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top right;
+	width:100%;
+	justify-content: center;
+	align-items: center;
+	max-height: 85vh;
+}
+
+.profile-pic img{
+	display: flex;
+	border-radius: 3%;
+	border: white .5rem solid;
+	margin-left: 10%;
+	box-shadow: 0 10px 10px -10px #555;
+	max-height: 60vh;
+}
+
+.intro{
+	display: flex;
+	flex-flow: column nowrap;
+	color: white;
+	margin: 10%;
+	width: 75%;
+}
+
+.intro h2{
+	font-size: 5vh;
+	text-shadow:1px 1px 2px #000000;
+}
+
+.intro h3{
+	font-size: 3vh;
+	text-shadow:1px 1px 2px #000000;
+	padding-bottom: 4%;
+}
+
+.intro p{
+	text-shadow:1px 1px 2px #000000;
+}
+
+.intro a{
+	background-color: white;
+	width: 50%;
+	text-align: center;
+	border-radius: 2.5%;
+	margin-top: 3%;
+	cursor: pointer;
+	box-shadow: 0 10px 10px -10px #555;
+	padding: 2.5% 2% 1.5% 2%;
+	white-space: nowrap;
+}
+
+.intro a:hover{
+	background-color: #EA5C6C;
+	color: white;
+	transform: scale(1.1);
+}
+
+#projects{
+	display: flex;
+	flex-flow: wrap column;
+}
+
+#projects h2{
+	font-size: 4rem;
+	color:gray;
+	display: flex;
+	justify-content: center;
+}
+
+.thumbnails{
+	/* display: flex;
+	flex-flow: wrap row; */
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.projects-rows{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-evenly;
+	margin-bottom: 3%;
+}
+
+.project-card{
+	box-shadow: 0 10px 10px -10px #555;
+	margin: 1% 0 4% 0;
+	width: 23%; 
+}
+
+.item{
+	width:100%;
+	border-radius: 3% 3% 0 0;
+}
+
+.card-info{
+	 padding: 10%;
+ }
+
+.thumbnails .project-name{
+	text-align: left;
+	color: #4094A9;
+	font-size: 1.8rem;
+	margin-bottom: 2%;
+}
+
+#footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #4094A9;
+	width: 100%;
+}
+
+#footer .contact{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin:3%;
+}
+#footer .contact h3{
+	font-size: 3rem;
+	padding: 2% 0;
+	color: white;	
+}
+
+.contact .contact-me-btn{
+	box-shadow: 0 10px 10px -10px #555;
+	background-color: white;
+	border-radius: 2.5%;
+	text-align: center;
+	padding: 2% 2% 1.5% 2%;
+} 
+
+.contact-me-btn:hover{
+	background-color:#EA5C6C;
+	color:white;
+	transform: scale(1.2);
+}
+
+ .icon-parent{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:30%;
+}
+
+.icon-parent .icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:7%;
+}
+
+.icon:hover{
+	transform: rotate(10deg) scale(1.5);
+}
+
+/* media Query for tablet */
+@media(max-width:800px){
+	.links a{
+		margin-right: 2rem;
+	}
+	
+	.project-card{
+		width: 30%;
+	}
+	.icon-parent{
+		width: 40%;
+	}
+}
+@media(max-width:650px){
+	nav{
+		flex-flow: wrap;
+		height: 15vh;
+	}
+	nav .name{
+		width:50%;
+		padding-bottom: 7rem;
+		width:100%;
+		justify-content: center;
+	}
+	.links a{
+		margin-right: 1.4rem;
+		padding-top: 4rem;
+		justify-content: space-evenly;
+		width:21.5%;
+	}
+
+	#about {
+		flex-wrap: wrap;
+		padding-top: 15%;
+		text-align: center;
+	}
+	.intro a{
+		align-self: center;
+	}
+	.profile-pic{
+		display: none;	
+	}
+	.intro a{
+		width:50%;
+	}
+	.intro p{
+		margin-bottom: 6%;
+	}
+	.project-card{
+		width: 100%;
+	}
+	.contact .contact-me-btn{
+		width: 30%
+	}
+	.icon-parent{
+		width: 40%;
+	}
+}
